@@ -3,9 +3,9 @@ import Card from "./Card"
 
 function Tours ({tours, removeTour}) {
     return (
-        <div>
-            <div>Plan A Trip</div>
-            <div>
+        <div className="container">
+            <div className="title">Plan A Trip</div>
+            <div className="cards">
                 {
                     tours.map( (tour) => {
                         return <Card {...tour} removeTour={removeTour}></Card>

@@ -14,7 +14,7 @@ function Card({id, name, info, image, price, removeTour}){
             <div className="tour-info">
                 <div className="tour-details">
                     <h2 className="tour-name">{name}</h2>
-                    <h2 className="tour-price">{price}</h2>
+                    <h2 className="tour-price">₹ {price}</h2>
                 </div>
                 <div className="description" onClick={readmorehandler}>
                     {description}
